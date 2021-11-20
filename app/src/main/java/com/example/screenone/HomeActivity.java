@@ -8,6 +8,8 @@ import android.net.NetworkInfo;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (!isConnected(HomeActivity.this)) buildDialog(HomeActivity.this).show();
         else {
+
             setContentView(R.layout.activity_home);
 
             myWebView = (WebView) findViewById(R.id.webView);
