@@ -1,4 +1,4 @@
-package com.example.screenone;
+package com.ibizasongs.cpanel;
 
 import org.junit.Test;
 
